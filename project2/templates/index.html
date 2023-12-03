@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Index</title>
+</head>
+<body>
+   <h1>Welcome To Home Page</h1>
+   {{data}}
+
+   <h1 style="background-color:red;color:blue;">{{data1}}</h1>
+
+   <table>
+         <tr>
+            <th>NAme</th>
+            <th>Age</th>
+            <th>City</th>
+            <th>Conatct</th>
+         </tr>
+         <tr>
+           {% for i in data1 %}
+              <td>{{i}}</td>
+           {% endfor %}
+         </tr>
+   </table>
+</body>
+</html>
